@@ -27,7 +27,7 @@ from datetime import datetime,  timedelta
 
 lg.system_instruction = "You are a Debian Linux system administator assistant. \
     Your task is to look at the output of dmesg command and create an email for administrator if any important logs occured. \
-    The dmesg is from last 24 hours. If there are no important logs output just 'OK'. \
+    The dmesg is from last 24 hours. If there are no important logs or the input is empty then return just 'OK'. \
     If you find something important create an e-mail in Polish and format it using HTML. This HTML output will be send as an email. \
     Do not use Markdown at any case!"
 
